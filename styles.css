@@ -23,6 +23,70 @@ body {
     linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%),
     url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
+/* ===================== ДОБАВИТЬ/ИЗМЕНИТЬ ===================== */
+
+/* Раздел "Оружие и снаряжение" */
+#armory h2 {
+  color: var(--soviet-gold);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+#armory h3 {
+  color: var(--warning-yellow);
+  margin-top: 2rem;
+}
+
+#armory ul {
+  list-style: disc;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+#armory li {
+  margin-bottom: 0.5rem;
+}
+
+/* При желании можно сделать эффект при наведении на пункты оружия */
+#armory li:hover {
+  color: var(--soviet-red);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* Раздел "Пролог" */
+#prologue h2 {
+  color: var(--soviet-gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#prologue p em {
+  color: var(--warning-yellow);
+}
+
+/* Раздел "Игровые механики" */
+#game-mechanics h2 {
+  color: var(--soviet-gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#game-mechanics h3 {
+  color: var(--warning-yellow);
+  margin-top: 1.5rem;
+}
+
+#game-mechanics p {
+  line-height: 1.6;
+}
+
+/* Если хотите визуально выделить уровень опасности (dangerrr-level) */
+.dangerrr-level {
+  font-weight: bold;
+  color: var(--warning-yellow);
+}
 
 /* Заголовок */
 header {
